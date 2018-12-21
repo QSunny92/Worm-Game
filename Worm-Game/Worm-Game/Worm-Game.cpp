@@ -15,7 +15,7 @@ int main()
 	while (1)
 	{
 		int menuCode = menu.menuDraw();
-		
+
 		if (menuCode == 0)
 		{
 			Map map;
