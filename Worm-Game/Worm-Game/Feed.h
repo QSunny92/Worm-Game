@@ -1,8 +1,9 @@
 #pragma once
-class Feed
+#include "Tile.h"
+
+class Feed : public Tile
 {
 public:
-	Feed();
-	~Feed();
+	void Eat();
 };
 

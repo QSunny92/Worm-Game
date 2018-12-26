@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "Tile.h"
+#include <iostream>
+using namespace std;
 
 Tile::Tile()
 :X(0), Y(0), drawFlag(0)

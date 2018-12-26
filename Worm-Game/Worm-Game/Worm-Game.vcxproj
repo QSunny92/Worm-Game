@@ -151,7 +151,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Feed.h" />
     <ClInclude Include="GameMgr.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Menu.h" />
@@ -161,7 +160,6 @@
     <ClInclude Include="Worm.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Feed.cpp" />
     <ClCompile Include="GameMgr.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Menu.cpp" />
