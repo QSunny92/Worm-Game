@@ -30,6 +30,10 @@ bool Tile::isDraw()
 {
 	return drawFlag;
 }
+void Tile::setTileType(int type)
+{
+	tileType = type;
+}
 /*
 void Tile::draw()
 {

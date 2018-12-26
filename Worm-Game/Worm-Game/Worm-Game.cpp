@@ -2,6 +2,7 @@
 //
 
 #include "pch.h"
+#include "GameMgr.h"
 #include "Menu.h"
 #include "Map.h"
 
@@ -11,6 +12,7 @@ using namespace std;
 int main()
 {
 	Menu menu;
+	GameMgr gm;
 	menu.init();
 	while (1)
 	{
@@ -20,6 +22,7 @@ int main()
 		{
 			Map map;
 			map.init();
+			gm.gameLoop();
 		}
 		else if (menuCode == 1)
 		{

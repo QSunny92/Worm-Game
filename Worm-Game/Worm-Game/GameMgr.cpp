@@ -34,3 +34,13 @@ void GameMgr::setColor(int forground, int background)
 	int code = forground + background * 16;
 	SetConsoleTextAttribute(conH, code);
 }
+
+void GameMgr::gameLoop()
+{
+	int playing = 1;
+
+	while (playing)
+	{
+
+	}
+}

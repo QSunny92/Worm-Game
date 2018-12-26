@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void Wall::wallDraw(Tile (*pTile)[20], int i, int j)
+void Wall::wallDraw(Tile (*pTile)[21], int i, int j)
 {
 	GameMgr gm;
 

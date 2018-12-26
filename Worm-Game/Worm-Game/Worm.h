@@ -1,11 +1,16 @@
 #pragma once
+#include "Tile.h"
+#include "GameMgr.h"
+
 class Worm
 {
 private:
-	int X;
-	int Y;
+	Tile head;
+	GameMgr gm;
 
 public:
-	Worm();
+	void init();
+	void wormDraw();
+	void MoveWorm();
 };
 

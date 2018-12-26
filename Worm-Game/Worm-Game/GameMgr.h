@@ -14,6 +14,7 @@ public:
 	void gotoxy(int x, int y);
 	int keyControl();
 	void setColor(int forground, int background);
+	void gameLoop();
 
 };
 
