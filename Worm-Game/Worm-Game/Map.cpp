@@ -44,8 +44,7 @@ void Map::init()
 				initWall(tile[i][j]);
 			}
 		}
-		infoDraw();
-
+		
 		tile[X][Y].setTileType(EMPTY);
 		tile[X][Y].setdrawFlag(false);
 
@@ -55,6 +54,9 @@ void Map::init()
 			key = gm.keyControl();
 
 		initFeed();
+
+
+		infoDraw();
 
 		Sleep(500);
 	}
