@@ -5,14 +5,6 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Worm-Game", "Worm-Game\Worm-Game.vcxproj", "{3D7170E2-A594-44A6-AF86-20A3806B12F6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{A7ADF416-4A03-4FF1-95DC-318F680CEB21}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{348A4933-E84A-4A61-8A47-AA8031C2085D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{83B77117-481A-43A2-83D0-AFAA7B6998EE}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{3F766F49-3DC9-4411-8878-27508085FD7F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -29,22 +21,9 @@ Global
 		{3D7170E2-A594-44A6-AF86-20A3806B12F6}.Release|x64.Build.0 = Release|x64
 		{3D7170E2-A594-44A6-AF86-20A3806B12F6}.Release|x86.ActiveCfg = Release|Win32
 		{3D7170E2-A594-44A6-AF86-20A3806B12F6}.Release|x86.Build.0 = Release|Win32
-		{3F766F49-3DC9-4411-8878-27508085FD7F}.Debug|x64.ActiveCfg = Debug|x64
-		{3F766F49-3DC9-4411-8878-27508085FD7F}.Debug|x64.Build.0 = Debug|x64
-		{3F766F49-3DC9-4411-8878-27508085FD7F}.Debug|x86.ActiveCfg = Debug|Win32
-		{3F766F49-3DC9-4411-8878-27508085FD7F}.Debug|x86.Build.0 = Debug|Win32
-		{3F766F49-3DC9-4411-8878-27508085FD7F}.Release|x64.ActiveCfg = Release|x64
-		{3F766F49-3DC9-4411-8878-27508085FD7F}.Release|x64.Build.0 = Release|x64
-		{3F766F49-3DC9-4411-8878-27508085FD7F}.Release|x86.ActiveCfg = Release|Win32
-		{3F766F49-3DC9-4411-8878-27508085FD7F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{348A4933-E84A-4A61-8A47-AA8031C2085D} = {A7ADF416-4A03-4FF1-95DC-318F680CEB21}
-		{83B77117-481A-43A2-83D0-AFAA7B6998EE} = {348A4933-E84A-4A61-8A47-AA8031C2085D}
-		{3F766F49-3DC9-4411-8878-27508085FD7F} = {348A4933-E84A-4A61-8A47-AA8031C2085D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3AE21F1E-5C3F-4089-8589-35539C10B68F}

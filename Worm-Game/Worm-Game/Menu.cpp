@@ -6,7 +6,7 @@ using namespace std;
 
 void Menu::init()
 {
-	system("mode con: cols=80 lines=21");
+	system("mode con: cols=80 lines=20");
 	HANDLE conH = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_CURSOR_INFO conCursor;
 	conCursor.bVisible = 0;

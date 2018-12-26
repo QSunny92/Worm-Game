@@ -18,9 +18,6 @@
     <ClInclude Include="pch.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Worm.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Menu.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -33,10 +30,10 @@
     <ClInclude Include="GameMgr.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Wall.h">
+    <ClInclude Include="Worm.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Feed.h">
+    <ClInclude Include="Wall.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -45,9 +42,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Worm-Game.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Worm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Menu.cpp">
@@ -62,10 +56,10 @@
     <ClCompile Include="GameMgr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Wall.cpp">
+    <ClCompile Include="Worm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Feed.cpp">
+    <ClCompile Include="Wall.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

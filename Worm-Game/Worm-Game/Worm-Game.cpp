@@ -30,6 +30,5 @@ int main()
 			return 0;
 		system("cls");
 	}
-
 	return 0;
 }
