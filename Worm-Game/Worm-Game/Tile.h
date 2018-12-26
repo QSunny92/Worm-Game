@@ -1,8 +1,10 @@
 #pragma once
 #include "GameMgr.h"
 
-#define WALL 100
-#define WORM_HEAD 101
+#define EMPTY		100
+#define WALL		101
+#define WORM_HEAD	102
+#define FEED		103
 
 class Tile
 {
@@ -11,6 +13,7 @@ private:
 	int Y;
 	bool drawFlag;
 	int tileType;
+	GameMgr gm;
 
 public:
 	Tile();
@@ -20,6 +23,7 @@ public:
 	void setdrawFlag(bool);
 	bool isDraw();
 	void setTileType(int );
+	int getTileType();
 
 };
 

@@ -26,14 +26,22 @@ void Tile::setdrawFlag(bool a)
 {
 	drawFlag = a;
 }
+
 bool Tile::isDraw()
 {
 	return drawFlag;
 }
+
 void Tile::setTileType(int type)
 {
 	tileType = type;
 }
+
+int Tile::getTileType()
+{
+	return tileType;
+}
+
 /*
 void Tile::draw()
 {

@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "GameMgr.h"
+#include "Map.h"
 #include <Windows.h>
 #include <conio.h>
 
@@ -35,12 +36,18 @@ void GameMgr::setColor(int forground, int background)
 	SetConsoleTextAttribute(conH, code);
 }
 
+void GameMgr::setGameStatus(int status)
+{
+	gameStatus = status;
+}
+
+int GameMgr::getGameStatus()
+{
+	return gameStatus - 1000;
+}
+
 void GameMgr::gameLoop()
 {
-	int playing = 1;
-
-	while (playing)
-	{
-
-	}
+	Map map;
+	map.init();
 }

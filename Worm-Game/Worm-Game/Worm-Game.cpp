@@ -20,8 +20,6 @@ int main()
 		
 		if (menuCode == 0)
 		{
-			Map map;
-			map.init();
 			gm.gameLoop();
 		}
 		else if (menuCode == 1)
