@@ -1,117 +1,32 @@
 #include "pch.h"
 #include "Worm.h"
 #include <iostream>
-#include <conio.h>
 #include <Windows.h>
-#include <synchapi.h>
 
 using namespace std;
 
-
-Worm::Worm()
-:X(18), Y(9), Key()
+void Worm::init()
 {
-	
+	head.setXY(10, 10);
+	head.setdrawFlag(true);
 }
 
-void Worm::initWorm()
+void Worm::wormDraw()
 {
-	gm.gotoxy(X,Y);
-	cout << "¡Ý";
-}
-
-void Worm::left()
-{
-	system("cls");
-	gm.gotoxy(X,Y);
-	cout << "¡Ý";
-	Sleep(1000);
-	X -= 2;
-
-}
-
-void Worm::right()
-{
-	system("cls");
-	gm.gotoxy(X,Y);
-	cout << "¡Ý";
-	Sleep(1000);
-	X += 2;
-}
-
-void Worm::forward()
-{
-	system("cls");
-	gm.gotoxy(X,Y);
-	cout << "¡Ý";
-	Sleep(1000);
-	--Y;
-}
-
-void Worm::back()
-{
-	system("cls");
-	gm.gotoxy(X,Y);
-	cout << "¡Ý";
-	Sleep(1000);
-	++Y;
-}
-
-void Worm::Move()
-{
-	while(true)
+	if (head.isDraw())
 	{
-		InputKey();
-		if(this -> Key == UP)
-		while (true)
-		{
-			forward();
-			if(_kbhit())
-			{
-				if(_getch() != 'w' || _getch() != 'W')
-					break;
-			}
-		}
-
-		else if(this -> Key == DOWN)
-		while (true)
-		{
-			back();
-			if(_kbhit())
-			{
-				if(_getch() != 's' || _getch() != 'S')
-					break;
-			}
-		}
-
-		else if(this -> Key == LEFT)
-		while (true)
-		{
-			left();
-			if(_kbhit())
-			{
-				if(_getch() != 'a' || _getch() != 'A')
-					break;
-			}
-		}
-
-		else if(this -> Key == RIGHT)
-		while (true)
-		{
-			right();
-			if(_kbhit())
-			{
-				if(_getch() != 'd' || _getch() != 'D')
-					break;
-			}
-		}
-			
+		gm.gotoxy(head.getX(), head.getY());
+		cout << "¡Ý";
 	}
-	
 }
 
-void Worm::InputKey()
+void Worm::MoveWorm()
 {
-	GameMgr gm;
-	this -> Key = gm.keyControl();
+	int x = head.getX() / 2;
+	int y = head.getY();
+	head.setXY(x, y);
+	head.setdrawFlag(false);
+	x = x + 1;
+	head.setXY(x, y);
+	head.setdrawFlag(true);
 }
